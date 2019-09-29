@@ -5,9 +5,11 @@ import {withStyles} from '@material-ui/core/styles'
 
 const styles = theme => ({
 	root: {
-    width: '50%',
+		width: '100vw',
+		height: '100vh',
     paddingTop: '50px',
-		margin: 'auto'
+		margin: 'auto',
+		backgroundColor: theme.palette.background.paper
 	},
 	headShot: {
 		height: '250px',

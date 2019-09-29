@@ -19,7 +19,6 @@ class Navbar extends Component {
 	render() {
 		const { classes } = this.props;
 		return (
-			<Paper>
 				<Toolbar className={classes.toolBar}>
 					<Button color='secondary' size='large'>
 						Portfolio
@@ -34,7 +33,6 @@ class Navbar extends Component {
 						Contact
 					</Button>
 				</Toolbar>
-			</Paper>
 		);
 	}
 }

@@ -11,7 +11,7 @@ import JavaScriptIcon from '../ExternalIcons/Javascript.svg';
 
 const styles = theme => ({
 	root: {
-		backgroundColor: 'rgba(58, 10, 48, 0.85)',
+		backgroundColor: 'rgba(58, 10, 48, .85)',
 		padding: '50px 20%'
 	},
 	image: {
@@ -74,6 +74,7 @@ class Portfolio extends Component {
 								<img
 									src={BYKRinfoWindow}
 									className={classes.image}
+									style={{borderRadius: '10px'}}
 									alt='BYKR view'
 								/>
 							</a>
