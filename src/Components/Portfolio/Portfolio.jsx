@@ -12,7 +12,8 @@ import JavaScriptIcon from '../ExternalIcons/Javascript.svg';
 const styles = theme => ({
 	root: {
 		backgroundColor: 'rgba(58, 10, 48, .85)',
-		padding: '50px 20%'
+		padding: '50px 20%',
+		minHeight: '100vh'
 	},
 	headerText: {
 		padding: '25px'
@@ -36,7 +37,7 @@ class Portfolio extends Component {
 		return (
 			<Paper className={classes.root}>
 				<Typography align='center' variant='h2' className={classes.headerText}>
-					Portfolio
+					Projects
 				</Typography>
 				<Divider />
 				<Grid container  className={classes.portfolioGrid}>

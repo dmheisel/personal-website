@@ -8,7 +8,9 @@ import GitHubMark from '../ExternalIcons/GitHub-Mark-Light-64px.png';
 const styles = theme => ({
 	root: {
 		backgroundColor: 'rgba(48, 58, 10, 0.85)',
-		padding: '50px 20%'
+		padding: '50px 20%',
+		minHeight: '100vh'
+		// margin: 'auto'
 	},
 	headerText: {
 		padding: '25px'

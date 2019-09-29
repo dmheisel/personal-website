@@ -13,26 +13,30 @@ const styles = theme => ({
 		width: '100vw',
 		display: 'flex',
 		justifyContent: 'flex-end'
+	},
+	button: {
+		padding: theme.spacing(1),
+		margin: theme.spacing(1)
 	}
 });
 class Navbar extends Component {
 	render() {
 		const { classes } = this.props;
 		return (
-				<Toolbar className={classes.toolBar}>
-					<Button color='secondary' size='large'>
-						Portfolio
-					</Button>
-					<Button color='primary' size='large'>
-						Skills
-					</Button>
-					<Button color='primary' size='large'>
-						Background
-					</Button>
-					<Button color='primary' size='large'>
-						Contact
-					</Button>
-				</Toolbar>
+			<Toolbar className={classes.toolBar}>
+				<Button color='secondary' size='large'>
+					Portfolio
+				</Button>
+				<Button color='primary' size='large'>
+					Background
+				</Button>
+				<Button color='primary' size='large'>
+					Contact
+				</Button>
+				<Button color='primary' size='large'>
+					Resume
+				</Button>
+			</Toolbar>
 		);
 	}
 }

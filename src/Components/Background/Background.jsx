@@ -17,7 +17,11 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = theme => ({
 	root: {
 		backgroundColor: 'rgba(10, 58, 31, 0.85)',
-		padding: '50px 10%'
+		padding: '50px 10%',
+		minHeight: '100vh'
+	},
+	contentGrid: {
+		padding: '20px 0'
 	},
 	headerText: {
 		padding: '25px'
@@ -32,8 +36,8 @@ class Background extends Component {
 					My Background
 				</Typography>
 				<Divider />
-				<Grid container spacing={8}>
-					<Grid item xs={8}>
+				<Grid container spacing={4} className={classes.contentGrid}>
+					<Grid item md={8} xs={12}>
 						<Card>
 							<CardHeader
 								title='Prime Digital Academy'
@@ -43,7 +47,10 @@ class Background extends Component {
 								<List dense>
 									<ListItem>
 										<ListItemText>
-											• Developed a Solo Project and a Team Project in two week sprints.  Responsible for scoping, designing, and developing the project to meet our client's business needs.
+											• Developed a Solo Project and a Team Project in two week
+											sprints. Responsible for scoping, designing, and
+											developing the project to meet our client's business
+											needs.
 										</ListItemText>
 									</ListItem>
 									<Divider />
@@ -74,51 +81,51 @@ class Background extends Component {
 							</CardContent>
 						</Card>
 					</Grid>
-					<Grid container xs={12} spacing={8} justify='flex-end'>
-						<Grid item xs={8}>
-							<Card>
-								<CardHeader
-									title='Financial Worker, St Louis County PHHS'
-									subheader='August 2013 - June 2019'
-									align="right"
-								/>
-								<CardContent>
-									<List dense>
-										<ListItem>
-											<ListItemText>
-												• Worked together with a team to brainstorm solutions to
-												complicated policy issues and present possible solutions
-												for policy oversights to MN DHS officials.
-											</ListItemText>
-										</ListItem>
-										<Divider />
-										<ListItem>
-											<ListItemText>
-												• Managed maintenance for a caseload of 250+ clients
-												receiving various Medical Assistance and public
-												assistance programs.
-											</ListItemText>
-										</ListItem>
-										<Divider />
-										<ListItem>
-											<ListItemText>
-												• Maintained familiarity with complex and ever-changing
-												state policy for programs, understanding the complicated
-												statutes and laws.
-											</ListItemText>
-										</ListItem>
-										<Divider />
-										<ListItem>
-											<ListItemText>
-												• Communicated program policies in easy-to-understand
-												terms for an aging and disabled client base and their
-												families.
-											</ListItemText>
-										</ListItem>
-									</List>
-								</CardContent>
-							</Card>
-						</Grid>
+				</Grid>
+				<Grid container justify='flex-end'>
+					<Grid item md={8} xs={12}>
+						<Card>
+							<CardHeader
+								title='Financial Worker, St Louis County PHHS'
+								subheader='August 2013 - June 2019'
+								align='right'
+							/>
+							<CardContent>
+								<List dense>
+									<ListItem>
+										<ListItemText>
+											• Worked together with a team to brainstorm solutions to
+											complicated policy issues and present possible solutions
+											for policy oversights to MN DHS officials.
+										</ListItemText>
+									</ListItem>
+									<Divider />
+									<ListItem>
+										<ListItemText>
+											• Managed maintenance for a caseload of 250+ clients
+											receiving various Medical Assistance and public assistance
+											programs.
+										</ListItemText>
+									</ListItem>
+									<Divider />
+									<ListItem>
+										<ListItemText>
+											• Maintained familiarity with complex and ever-changing
+											state policy for programs, understanding the complicated
+											statutes and laws.
+										</ListItemText>
+									</ListItem>
+									<Divider />
+									<ListItem>
+										<ListItemText>
+											• Communicated program policies in easy-to-understand
+											terms for an aging and disabled client base and their
+											families.
+										</ListItemText>
+									</ListItem>
+								</List>
+							</CardContent>
+						</Card>
 					</Grid>
 				</Grid>
 			</Paper>
