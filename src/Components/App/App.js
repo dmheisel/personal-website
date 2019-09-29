@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
-import {CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@material-ui/core';
 import AboutMe from '../AboutMe/AboutMe';
 import Navbar from '../Navbar/Navbar';
 import Portfolio from '../Portfolio/Portfolio';
@@ -16,13 +16,34 @@ class App extends Component {
 				<Parallax
 					blur={0}
 					bgImage={require('../Views/background.jpg')}
-					bgImageAlt='snowy background'
-					strength={-1250}>
+					bgImageAlt='stone stairs and tree'
+					strength={-700}>
 					<Navbar />
 					<AboutMe />
+					{/* <Parallax
+						blur={0}
+					bgImage={require('../Views/')} */}
 					{/* <Skills /> */}
+				</Parallax>
+				<Parallax
+					blur={0}
+					bgImage={require('../Views/PontDuGardTree.jpg')}
+					bgImageAlt='Tree at Pont du Gard'
+					strength={500}>
 					<Portfolio />
+				</Parallax>
+				<Parallax
+					blur={0}
+					bgImage={require('../Views/Castelneau.jpg')}
+					bgImageAlt='Castelneau vista'
+					strength={-500}>
 					<Background />
+				</Parallax>
+				<Parallax
+					blur={0}
+					bgImage={require('../Views/PontDuGard.jpg')}
+					bgImageAlt='Pont Du Gard'
+					strength={500}>
 					<Contact />
 				</Parallax>
 			</React.Fragment>
