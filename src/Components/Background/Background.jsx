@@ -6,7 +6,6 @@ import {
 	Typography,
 	Grid,
 	Card,
-	CardActions,
 	CardContent,
 	CardHeader,
 	Divider,

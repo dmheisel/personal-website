@@ -23,22 +23,22 @@ class Navbar extends Component {
 		return (
 			<Toolbar className={classes.toolBar}>
 				<ScrollLink to='About' spy={true} smooth={true} duration={500}>
-					<Button color='primary' href='#Portfolio' size='large'>
-						About Me
+					<Button color='primary' size='large'>
+						About
 					</Button>
 				</ScrollLink>
 				<ScrollLink to='Portfolio' spy={true} smooth={true} duration={500}>
-					<Button color='primary' href='#Portfolio' size='large'>
+					<Button color='primary' size='large'>
 						Portfolio
 					</Button>
 				</ScrollLink>
 				<ScrollLink to='Background' spy={true} smooth={true} duration={500}>
-					<Button color='primary' href='#Background' size='large'>
+					<Button color='primary'size='large'>
 						Background
 					</Button>
 				</ScrollLink>
 				<ScrollLink to='Contact' spy={true} smooth={true} duration={500}>
-					<Button color='primary' href='#Contact' size='large'>
+					<Button color='primary'size='large'>
 						Contact
 					</Button>
 				</ScrollLink>

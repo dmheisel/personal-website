@@ -58,7 +58,7 @@ class Contact extends Component {
 					</Typography>
 					<Divider />
 					<Grid container justify='space-between' align='center'>
-						<Grid item xs={5}>
+						<Grid item xs={12} md={5}>
 							<List style={{ display: 'inline-block' }}>
 								<ListItem>
 									<Button className={classes.button}>
@@ -74,7 +74,7 @@ class Contact extends Component {
 								</ListItem>
 							</List>
 						</Grid>
-						<Grid item xs={5}>
+						<Grid item xs={12} md={5}>
 							<List style={{ display: 'inline-block' }}>
 								<ListItem>
 									<Button
