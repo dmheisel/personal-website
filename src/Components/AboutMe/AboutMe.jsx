@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Avatar, Typography } from '@material-ui/core'
-import Headshot from './Headshot1.jpg';
+import Headshot from '../Views/profile-photo.png';
 import {withStyles} from '@material-ui/core/styles'
 
 const styles = theme => ({
@@ -39,7 +39,7 @@ class AboutMe extends Component {
 						variant='h5'
 						align='center'
 						className={classes.titleText}>
-						I'm a Full Stack Software Engineer focused on
+						Full Stack Software Engineer
 					</Typography>
 				</Grid>
 			</Grid>

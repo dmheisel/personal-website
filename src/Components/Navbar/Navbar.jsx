@@ -4,7 +4,9 @@ import {withStyles} from '@material-ui/core/styles'
 const styles = theme => ({
 	toolBar: {
 		position: 'fixed',
-		width: '100vw'
+    width: '100vw',
+    display: 'flex',
+    justifyContent: 'flex-end'
 	}
 });
 class Navbar extends Component {
@@ -12,7 +14,18 @@ class Navbar extends Component {
     const {classes} = this.props
     return (
 			<Toolbar className={classes.toolBar}>
-				<Typography>Test</Typography>
+				<Button color='secondary' size='large'>
+					Portfolio
+				</Button>
+				<Button color='primary' size='large'>
+					Skills
+				</Button>
+				<Button color='primary' size='large'>
+					Background
+				</Button>
+				<Button color='primary' size='large'>
+					Resume
+				</Button>
 			</Toolbar>
 		);
   }
