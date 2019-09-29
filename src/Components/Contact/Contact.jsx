@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
-
+import Fade from 'react-reveal';
 import {
 	Typography,
 	Button,
@@ -54,61 +54,65 @@ class Contact extends Component {
 		return (
 			<Element id='Contact' name='Contact'>
 				<Paper className={classes.root}>
-					<div className={classes.header}>
+					<Fade bottom cascade>
+						<div className={classes.header}>
+							<Typography
+								align='center'
+								variant='h2'
+								className={classes.headerText}>
+								Contact
+							</Typography>
+						</div>
+						<Divider />
 						<Typography
 							align='center'
-							variant='h2'
-							className={classes.headerText}>
-							Contact
+							variant='h4'
+							className={classes.subHeaderText}>
+							Want to get in touch? <br />
+							<br /> Here's how!
 						</Typography>
-					</div>
-					<Divider />
-					<Typography
-						align='center'
-						variant='h4'
-						className={classes.subHeaderText}>
-						Want to get in touch? <br />
-						<br /> Here's how!
-					</Typography>
-					<Divider />
-					<Grid
-						container
-						justify='center'
-						align='center'
-						direction='row'
-						className={classes.contentGrid}>
-						<List>
-							<ListItem>
-								<Button className={classes.button}>
-									<LinkedInIcon />
-									linkedin.com/in/dheisel
-								</Button>
-							</ListItem>
-							<ListItem>
-								<Button className={classes.button}>
-									<AlternateEmailIcon />
-									d.m.heisel@gmail.com
-								</Button>
-							</ListItem>
-							<ListItem>
-								<Button className={classes.button}>
-									<Avatar
-										src={GitHubMark}
-										style={{ height: '24px', width: '24px' }}
-									/>
-									<Typography variant='button'>github.com/dmheisel</Typography>
-								</Button>
-							</ListItem>
-							<ListItem>
-								<Button className={classes.button}>
-									<InstagramIcon />
-									instagram.com/dheis3l
-								</Button>
-							</ListItem>
-						</List>
-					</Grid>
+						<Divider />
+						<Grid
+							container
+							justify='center'
+							align='center'
+							direction='row'
+							className={classes.contentGrid}>
+							<List>
+								<ListItem>
+									<Button className={classes.button}>
+										<LinkedInIcon />
+										linkedin.com/in/dheisel
+									</Button>
+								</ListItem>
+								<ListItem>
+									<Button className={classes.button}>
+										<AlternateEmailIcon />
+										d.m.heisel@gmail.com
+									</Button>
+								</ListItem>
+								<ListItem>
+									<Button className={classes.button}>
+										<Avatar
+											src={GitHubMark}
+											style={{ height: '24px', width: '24px' }}
+										/>
+										<Typography variant='button'>
+											github.com/dmheisel
+										</Typography>
+									</Button>
+								</ListItem>
+								<ListItem>
+									<Button className={classes.button}>
+										<InstagramIcon />
+										instagram.com/dheis3l
+									</Button>
+								</ListItem>
+							</List>
+						</Grid>
 
-					<Divider />
+						<Divider />
+					</Fade>
 				</Paper>
 			</Element>
 		);

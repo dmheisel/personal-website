@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
+import Fade from 'react-reveal/Fade';
 
 import {
 	Paper,
@@ -40,6 +41,7 @@ class Background extends Component {
 		return (
 			<Element id='Background' name='Background'>
 				<Paper className={classes.root}>
+					<Fade top cascade>
 					<div className={classes.header}>
 						<Typography
 							variant='h2'
@@ -157,7 +159,8 @@ class Background extends Component {
 								</Card>
 							</Grid>
 						</Grid>
-					</Grid>
+						</Grid>
+						</Fade>
 				</Paper>
 			</Element>
 		);

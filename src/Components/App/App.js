@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
-import Fade from 'react-reveal/Fade';
 import { CssBaseline } from '@material-ui/core';
 import AboutMe from '../AboutMe/AboutMe';
 import Navbar from '../Navbar/Navbar';
@@ -18,42 +17,24 @@ class App extends Component {
 					blur={0}
 					bgImage={require('../Views/background.jpg')}
 					bgImageAlt='stone stairs and tree'
-					strength={-700}>
-					<Navbar />
-					<Fade left>
-						<AboutMe />
-					</Fade>
-					{/* <Parallax
-						blur={0}
-					bgImage={require('../Views/')} */}
-					{/* <Skills /> */}
-				</Parallax>
-				<Parallax
-					blur={0}
-					bgImage={require('../Views/PontDuGardTree.jpg')}
-					bgImageAlt='Tree at Pont du Gard'
 					strength={500}>
-					<Fade right>
-						<Portfolio/>
-					</Fade>
+					<Navbar />
+					<AboutMe />
+					<Portfolio />
 				</Parallax>
 				<Parallax
 					blur={0}
 					bgImage={require('../Views/Castelneau.jpg')}
 					bgImageAlt='Castelneau vista'
-					strength={-500}>
-					<Fade top>
-						<Background />
-					</Fade>
+					strength={-200}>
+					<Background />
 				</Parallax>
 				<Parallax
 					blur={0}
 					bgImage={require('../Views/PontDuGard.jpg')}
 					bgImageAlt='Pont Du Gard'
 					strength={500}>
-					<Fade bottom>
-						<Contact />
-					</Fade>
+					<Contact />
 				</Parallax>
 			</React.Fragment>
 		);

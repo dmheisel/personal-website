@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
-
+import Fade from 'react-reveal/Fade';
 import { Grid, Typography, Paper, Divider } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import BYKRinfoWindow from '../Views/BYKR-Info-Window.png';
@@ -47,6 +47,7 @@ class Portfolio extends Component {
 		return (
 			<Element id='Portfolio' name='Portfolio'>
 				<Paper className={classes.root}>
+					<Fade right cascade>
 					<div className={classes.header}>
 						<Typography
 							align='center'
@@ -108,7 +109,8 @@ class Portfolio extends Component {
 								</a>
 							</Grid>
 						</Grid>
-					</Grid>
+						</Grid>
+						</Fade>
 				</Paper>
 			</Element>
 		);

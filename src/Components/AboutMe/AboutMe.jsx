@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
+import Fade from 'react-reveal/Fade';
 import { Grid, Avatar, Typography } from '@material-ui/core';
 import Headshot from '../Views/profile-photo.png';
 import { withStyles } from '@material-ui/core/styles';
@@ -9,7 +10,9 @@ const styles = theme => ({
 		width: '100vw',
 		height: '100vh',
 		paddingTop: '50px',
-		margin: 'auto',
+		margin: 'auto'
+	},
+	backgroundColor: {
 		backgroundColor: theme.palette.background.paper
 	},
 	headShot: {
@@ -25,38 +28,38 @@ const styles = theme => ({
 });
 
 class AboutMe extends Component {
-
 	render() {
 		const { classes } = this.props;
 		return (
-			<Element id='About' name='about'>
-				<Grid
-					className={classes.root}
-					container
-					spacing={3}
-					justify='center'
-					alignItems='center'>
-					<Grid item xs={12}>
-						<Avatar src={Headshot} className={classes.headShot} />
+			<Element id='About' name='about' className={classes.backgroundColor}>
+				<Fade left>
+					<Grid
+						className={classes.root}
+						container
+						spacing={3}
+						justify='center'
+						alignItems='center'>
+						<Grid item xs={12}>
+							<Avatar src={Headshot} className={classes.headShot} />
+						</Grid>
+						<Grid item xs={12}>
+							<Typography
+								variant='h3'
+								align='center'
+								className={classes.titleText}>
+								David Heisel
+							</Typography>
+						</Grid>
+						<Grid item xs={12}>
+							<Typography
+								variant='h5'
+								align='center'
+								className={classes.titleText}>
+								Full Stack Software Engineer in the Twin Cities
+							</Typography>
+						</Grid>
 					</Grid>
-
-					<Grid item xs={12}>
-						<Typography
-							variant='h3'
-							align='center'
-							className={classes.titleText}>
-							David Heisel
-						</Typography>
-					</Grid>
-					<Grid item xs={12}>
-						<Typography
-							variant='h5'
-							align='center'
-							className={classes.titleText}>
-							Full Stack Software Engineer in the Twin Cities
-						</Typography>
-					</Grid>
-				</Grid>
+				</Fade>
 			</Element>
 		);
 	}
