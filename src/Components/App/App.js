@@ -1,40 +1,36 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
-import { Paper, AppBar, Toolbar, Typography, CssBaseline } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles'
+import { Parallax } from 'react-parallax';
+import {
+	Paper,
+	CssBaseline
+} from '@material-ui/core';
+import Home from '../Home/Home';
+import AboutMe from '../AboutMe/AboutMe';
+import Navbar from '../Navbar/Navbar';
 
-import Home from '../Home/Home'
-
-const styles = theme => ({
-  root: {
-    height: '100vh',
-    width: '100vw'
-  },
-  appbar: {
-    // margin: theme.spacing(2),
-    // padding: theme.spacing(2)
-  }
-})
 class App extends Component {
-  render() {
-    const { classes } = this.props;
+	render() {
 		return (
-      <div>
-        <CssBaseline />
-				<Paper>
-					<AppBar position='static'>
-						<Toolbar>
-							<Typography>Content</Typography>
-						</Toolbar>
-          </AppBar>
-          <Router>
-            <Route exact path="/" component={Home} />
-            {/* <Route path="/resume" component={Resume} /> */}
-          </Router>
-				</Paper>
-			</div>
+			<React.Fragment>
+				<CssBaseline />
+				<Parallax
+					// blur={0}
+					bgImage={require('../Views/background.jpg')}
+					bgImageAlt='snowy background'
+					strength={500}>
+					<Paper>
+						<Navbar />
+						<AboutMe />
+					</Paper>
+					<div style={{ height: '200px' }} />
+					<Home />
+					<div style={{ height: '200px' }} />
+				</Parallax>
+				<div style={{ height: '200px' }} />
+			</React.Fragment>
 		);
 	}
 }
 
-export default withStyles(styles)(App);
+export default App;

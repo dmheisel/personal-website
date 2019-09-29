@@ -4,14 +4,18 @@ import App from './Components/App/App';
 import 'typeface-roboto';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import {purple, cyan} from '@material-ui/core/colors'
+import {purple, cyan, deepOrange, lightBlue} from '@material-ui/core/colors'
 import * as serviceWorker from './serviceWorker';
 
 const theme = createMuiTheme({
 	palette: {
 		type: 'dark',
-		primary: purple,
-		secondary: cyan
+		primary: deepOrange,
+		secondary: lightBlue,
+		background: {
+			paper: 'rgba(10, 45, 58, 0.85)',
+			default: '#424242'
+		}
 	}
 });
 
