@@ -52,7 +52,7 @@ class AboutMe extends Component {
 							variant='h5'
 							align='center'
 							className={classes.titleText}>
-							Full Stack Software Engineer
+							Full Stack Software Engineer in the Twin Cities
 						</Typography>
 					</Grid>
 				</Grid>

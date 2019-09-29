@@ -15,7 +15,7 @@ const styles = theme => ({
 	root: {
 		backgroundColor: 'rgba(58, 10, 48, .85)',
 		// padding: '50px 0',
-		minHeight: '100vh'
+		minHeight: '100vh',
 	},
 	header: {
 		width: '100vw',
@@ -29,11 +29,11 @@ const styles = theme => ({
 	},
 	portfolioGrid: {
 		padding: '20px 20%',
-		height: '80vh'
+		minHeight: '80vh'
 	},
 	image: {
 		maxHeight: '650px',
-		maxWidth: '20vw'
+		maxWidth: '60vw'
 	},
 	icon: {
 		height: '50px',

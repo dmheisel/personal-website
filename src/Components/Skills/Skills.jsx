@@ -4,11 +4,20 @@ import {withStyles} from '@material-ui/core/styles'
 
 const styles = theme => ({
 	root: {
-		backgroundColor: 'rgba(58, 32, 10, 1)',
-		padding: '50px 20%'
+		backgroundColor: 'rgba(58, 32, 10, .85)'
+	},
+	contentGrid: {
+		padding: '20px 10%'
+	},
+	header: {
+		width: '100vw',
+		height: '20vh',
+		align: 'center',
+		justify: 'center',
+		backgroundColor: 'rgba(58, 32, 10, 1)'
 	},
 	headerText: {
-		padding: '25px'
+		padding: '5vh'
 	}
 });
 class Skills extends Component {
