@@ -17,7 +17,7 @@ class App extends Component {
 					blur={0}
 					bgImage={require('../Views/background.jpg')}
 					bgImageAlt='snowy background'
-					strength={1500}>
+					strength={-1000}>
 					<Navbar />
 					<AboutMe />
 					{/* <Skills /> */}
