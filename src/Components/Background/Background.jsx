@@ -33,7 +33,7 @@ class Background extends Component {
 		return (
 			<Paper className={classes.root}>
 				<Typography variant='h2' align='center' className={classes.headerText}>
-					My Background
+					Experience
 				</Typography>
 				<Divider />
 				<Grid container spacing={4} className={classes.contentGrid}>

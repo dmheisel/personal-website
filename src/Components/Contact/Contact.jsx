@@ -25,6 +25,9 @@ const styles = theme => ({
 	headerText: {
 		padding: '25px'
 	},
+	subHeaderText: {
+		padding: '50px'
+	},
 	button: {
 		display: 'block',
 		margin: theme.spacing(1),
@@ -41,7 +44,7 @@ class Contact extends Component {
 					Contact
 				</Typography>
 				<Divider />
-				<Typography align="center" variant="h5" className={classes.headerText}>Want to connect?  Feel free to get in touch with me!</Typography>
+				<Typography align="center" variant="h5" className={classes.subHeaderText}>Want to connect?  Feel free to get in touch with me!</Typography>
 				<Divider />
 				<Grid container justify='space-between' align='center'>
 					<Grid item xs={5}>
