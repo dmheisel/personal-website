@@ -8,6 +8,7 @@ import {
 import Home from '../Home/Home';
 import AboutMe from '../AboutMe/AboutMe';
 import Navbar from '../Navbar/Navbar';
+import Portfolio from '../Portfolio/Portfolio';
 
 class App extends Component {
 	render() {
@@ -23,8 +24,7 @@ class App extends Component {
 						<Navbar />
 						<AboutMe />
 					</Paper>
-					<div style={{ height: '200px' }} />
-					<Home />
+					<Portfolio />
 					<div style={{ height: '200px' }} />
 				</Parallax>
 				<div style={{ height: '200px' }} />

@@ -16,7 +16,7 @@ const styles = theme => ({
 		// margin: theme.spacing(2)
 	},
 	titleText: {
-		// fontWeight: 'bolder',
+		fontWeight: 'bolder',
 		textTransform: 'uppercase'
 	}
 });
