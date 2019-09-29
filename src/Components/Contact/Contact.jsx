@@ -54,48 +54,51 @@ class Contact extends Component {
 						align='center'
 						variant='h5'
 						className={classes.subHeaderText}>
-						Want to connect? Feel free to get in touch with me!
+						Want to connect? Get in touch with me!
 					</Typography>
-					<Divider />
-					<Grid container justify='space-between' align='center'>
-						<Grid item xs={12} md={5}>
-							<List style={{ display: 'inline-block' }}>
-								<ListItem>
-									<Button className={classes.button}>
-										<LinkedInIcon />
-										www.linkedin.com/in/david-heisel
-									</Button>
-								</ListItem>
-								<ListItem>
-									<Button className={classes.button}>
-										<AlternateEmailIcon />
-										d.m.heisel@gmail.com
-									</Button>
-								</ListItem>
-							</List>
+					<Grid container justify='center' align='center'>
+						<Grid container item justify='center' xs={12} md={6}>
+							<Grid item xs={12}>
+								<List style={{ display: 'block', margin: 'auto' }}>
+									<ListItem>
+										<Button className={classes.button}>
+											<LinkedInIcon />
+											linkedin.com/in/david-heisel
+										</Button>
+									</ListItem>
+									<ListItem>
+										<Button className={classes.button}>
+											<AlternateEmailIcon />
+											d.m.heisel@gmail.com
+										</Button>
+									</ListItem>
+								</List>
+							</Grid>
 						</Grid>
-						<Grid item xs={12} md={5}>
-							<List style={{ display: 'inline-block' }}>
-								<ListItem>
-									<Button
-										className={classes.button}
-										style={{ display: 'flex', alignItems: 'baseline' }}>
-										<Avatar
-											src={GitHubMark}
-											style={{ height: '24px', width: '24px' }}
-										/>
-										<Typography variant='button'>
-											github.com/dmheisel
-										</Typography>
-									</Button>
-								</ListItem>
-								<ListItem>
-									<Button className={classes.button}>
-										<InstagramIcon />
-										instagram.com/dheis3l
-									</Button>
-								</ListItem>
-							</List>
+						<Grid item container justify='center' xs={12} md={6}>
+							<Grid>
+								<List style={{ display: 'block', margin: 'auto' }}>
+									<ListItem>
+										<Button
+											className={classes.button}
+											style={{ display: 'flex', alignItems: 'baseline' }}>
+											<Avatar
+												src={GitHubMark}
+												style={{ height: '24px', width: '24px' }}
+											/>
+											<Typography variant='button'>
+												github.com/dmheisel
+											</Typography>
+										</Button>
+									</ListItem>
+									<ListItem>
+										<Button className={classes.button}>
+											<InstagramIcon />
+											instagram.com/dheis3l
+										</Button>
+									</ListItem>
+								</List>
+							</Grid>
 						</Grid>
 					</Grid>
 
