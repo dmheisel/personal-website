@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd4177560e0683bba41f62050dd51739",
+    "revision": "338904b7474e852bc3e52e4adaf85d54",
     "url": "/personal-website/index.html"
   },
   {
-    "revision": "96e23cb4b04bc09c0855",
+    "revision": "af1b38e34f2950bccb28",
     "url": "/personal-website/static/css/2.00f198a7.chunk.css"
   },
   {
-    "revision": "96e23cb4b04bc09c0855",
-    "url": "/personal-website/static/js/2.7efaa71b.chunk.js"
+    "revision": "af1b38e34f2950bccb28",
+    "url": "/personal-website/static/js/2.5b633800.chunk.js"
   },
   {
-    "revision": "7a46d3a17f900b9beee4",
-    "url": "/personal-website/static/js/main.6247836a.chunk.js"
+    "revision": "fea964c4edf37abd2c32",
+    "url": "/personal-website/static/js/main.f3ef3f5e.chunk.js"
   },
   {
     "revision": "6653b83669707388de50",
@@ -24,8 +24,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personal-website/static/media/BYKR-Info-Window.83471b4e.png"
   },
   {
+    "revision": "b15e3296ff2f7cbda41c74ce9ef7d6f3",
+    "url": "/personal-website/static/media/Castelneau.b15e3296.jpg"
+  },
+  {
     "revision": "dd60b11e9762b6e25f6d4ce981a1eeae",
     "url": "/personal-website/static/media/Javascript.dd60b11e.svg"
+  },
+  {
+    "revision": "aeba6135ba7ca39c4f1068c3d27fa7dc",
+    "url": "/personal-website/static/media/PontDuGard.aeba6135.jpg"
+  },
+  {
+    "revision": "e091bdd10d7ad60520bdbfa178b9db21",
+    "url": "/personal-website/static/media/PontDuGardTree.e091bdd1.jpg"
   },
   {
     "revision": "8e26f22094a11f6a689d8302dc30782c",
