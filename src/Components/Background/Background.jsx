@@ -31,6 +31,7 @@ class Background extends Component {
 				<Typography variant='h2' align='center' className={classes.headerText}>
 					My Background
 				</Typography>
+				<Divider />
 				<Grid container spacing={8}>
 					<Grid item xs={8}>
 						<Card>

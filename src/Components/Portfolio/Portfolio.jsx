@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Typography, Paper } from '@material-ui/core';
+import { Grid, Typography, Paper, Divider } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import BYKRinfoWindow from '../Views/BYKR-Info-Window.png';
 import GoogleMapsIcon from '../ExternalIcons/googlemapsapi.png';
@@ -13,6 +13,12 @@ const styles = theme => ({
 	root: {
 		backgroundColor: 'rgba(58, 10, 48, .85)',
 		padding: '50px 20%'
+	},
+	headerText: {
+		padding: '25px'
+	},
+	portfolioGrid: {
+		padding: '20px 0'
 	},
 	image: {
 		maxHeight: '650px',
@@ -29,7 +35,11 @@ class Portfolio extends Component {
 		const { classes } = this.props;
 		return (
 			<Paper className={classes.root}>
-				<Grid container spacing={4}>
+				<Typography align='center' variant='h2' className={classes.headerText}>
+					Portfolio
+				</Typography>
+				<Divider />
+				<Grid container  className={classes.portfolioGrid}>
 					<Grid item container xs={12} justify='space-between' align='center'>
 						<Grid item container xs={12} md={4} direction='row'>
 							<Grid item xs={12}>
@@ -74,7 +84,7 @@ class Portfolio extends Component {
 								<img
 									src={BYKRinfoWindow}
 									className={classes.image}
-									style={{borderRadius: '10px'}}
+									style={{ borderRadius: '10px' }}
 									alt='BYKR view'
 								/>
 							</a>
