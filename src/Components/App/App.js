@@ -9,6 +9,7 @@ import Background from '../Background/Background';
 import Skills from '../Skills/Skills';
 
 class App extends Component {
+
 	render() {
 		return (
 			<React.Fragment>
@@ -19,7 +20,7 @@ class App extends Component {
 					bgImageAlt='stone stairs and tree'
 					strength={-700}>
 					<Navbar />
-					<AboutMe />
+					<AboutMe  />
 					{/* <Parallax
 						blur={0}
 					bgImage={require('../Views/')} */}
@@ -30,7 +31,7 @@ class App extends Component {
 					bgImage={require('../Views/PontDuGardTree.jpg')}
 					bgImageAlt='Tree at Pont du Gard'
 					strength={500}>
-					<Portfolio />
+					<Portfolio onScroll={e => this.handleScroll(e)} />
 				</Parallax>
 				<Parallax
 					blur={0}

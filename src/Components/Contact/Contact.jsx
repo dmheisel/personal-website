@@ -43,8 +43,8 @@ const styles = theme => ({
 		display: 'contents',
 		width: 'auto',
 		// noWrap: true,
-		margin: theme.spacing(1),
-		padding: theme.spacing(0)
+		// margin: theme.spacing(1),
+		// padding: theme.spacing(0)
 	}
 });
 
@@ -77,8 +77,8 @@ class Contact extends Component {
 						direction='row'
 						className={classes.contentGrid}>
 						<Grid container item justify='center'>
-							<List style={{ display: 'inline-flex' }}>
-								<Grid item xs={12} md={3}>
+							<List>
+								<Grid item xs={12} md={2}>
 									<ListItem>
 										<Button className={classes.button}>
 											<LinkedInIcon />
@@ -86,7 +86,7 @@ class Contact extends Component {
 										</Button>
 									</ListItem>
 								</Grid>
-								<Grid item xs={12} md={3}>
+								<Grid item xs={12} md={2}>
 									<ListItem>
 										<Button className={classes.button}>
 											<AlternateEmailIcon />
@@ -94,7 +94,7 @@ class Contact extends Component {
 										</Button>
 									</ListItem>
 								</Grid>
-								<Grid item xs={12} md={3}>
+								<Grid item xs={12} md={2}>
 									<ListItem>
 										<Button className={classes.button}>
 											<Avatar
@@ -107,7 +107,7 @@ class Contact extends Component {
 										</Button>
 									</ListItem>
 								</Grid>
-								<Grid item xs={12} md={3}>
+								<Grid item xs={12} md={2}>
 									<ListItem>
 										<Button className={classes.button}>
 											<InstagramIcon />
@@ -117,11 +117,6 @@ class Contact extends Component {
 								</Grid>
 							</List>
 						</Grid>
-						{/* <Grid item container justify='center' xs={12} md={5}>
-							<Grid item xs={12}>
-								<List style={{ display: 'block', margin: 'auto' }}></List>
-							</Grid>
-						</Grid> */}
 					</Grid>
 
 					<Divider />
