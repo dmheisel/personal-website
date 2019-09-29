@@ -27,7 +27,6 @@ class App extends Component {
 					<Background />
 					<Contact />
 				</Parallax>
-				<div style={{ height: '200px' }} />
 			</React.Fragment>
 		);
 	}
