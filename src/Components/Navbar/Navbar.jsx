@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import {
-	Paper,
-	Toolbar,
-	Typography,
-	Button,
-	IconButton
-} from '@material-ui/core';
+import Scroll from 'react-scroll';
+import { Toolbar, Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
+
+const ScrollLink = Scroll.Link;
+
 const styles = theme => ({
 	toolBar: {
 		position: 'fixed',
@@ -24,16 +22,32 @@ class Navbar extends Component {
 		const { classes } = this.props;
 		return (
 			<Toolbar className={classes.toolBar}>
-				<Button color='secondary' size='large'>
-					Portfolio
-				</Button>
-				<Button color='primary' size='large'>
-					Background
-				</Button>
-				<Button color='primary' size='large'>
-					Contact
-				</Button>
-				<Button color='primary' size='large'>
+				<ScrollLink to='About' spy={true} smooth={true} duration={500}>
+					<Button color='primary' href='#Portfolio' size='large'>
+						About Me
+					</Button>
+				</ScrollLink>
+				<ScrollLink to='Portfolio' spy={true} smooth={true} duration={500}>
+					<Button color='primary' href='#Portfolio' size='large'>
+						Portfolio
+					</Button>
+				</ScrollLink>
+				<ScrollLink to='Background' spy={true} smooth={true} duration={500}>
+					<Button color='primary' href='#Background' size='large'>
+						Background
+					</Button>
+				</ScrollLink>
+				<ScrollLink to='Contact' spy={true} smooth={true} duration={500}>
+					<Button color='primary' href='#Contact' size='large'>
+						Contact
+					</Button>
+				</ScrollLink>
+				<Button
+					color='primary'
+					size='large'
+					href='https://docs.google.com/document/d/1cmX_RTbqVxVoztQxzf3Lb4jTTV4hmUIv9YPyYayBfRI/edit?usp=sharing'
+					target='_blank'
+					rel='noopener noreferrer'>
 					Resume
 				</Button>
 			</Toolbar>

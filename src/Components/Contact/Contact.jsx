@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Element } from 'react-scroll';
+
 import {
 	Typography,
 	Button,
@@ -39,55 +41,67 @@ class Contact extends Component {
 	render() {
 		const { classes } = this.props;
 		return (
-			<Paper className={classes.root}>
-				<Typography align='center' variant='h2' className={classes.headerText}>
-					Contact
-				</Typography>
-				<Divider />
-				<Typography align="center" variant="h5" className={classes.subHeaderText}>Want to connect?  Feel free to get in touch with me!</Typography>
-				<Divider />
-				<Grid container justify='space-between' align='center'>
-					<Grid item xs={5}>
-						<List style={{ display: 'inline-block' }}>
-							<ListItem>
-								<Button className={classes.button}>
-									<LinkedInIcon />
-									www.linkedin.com/in/david-heisel
-								</Button>
-							</ListItem>
-							<ListItem>
-								<Button className={classes.button}>
-									<AlternateEmailIcon />
-									d.m.heisel@gmail.com
-								</Button>
-							</ListItem>
-						</List>
+			<Element id='Contact' name='Contact'>
+				<Paper className={classes.root}>
+					<Typography
+						align='center'
+						variant='h2'
+						className={classes.headerText}>
+						Contact
+					</Typography>
+					<Divider />
+					<Typography
+						align='center'
+						variant='h5'
+						className={classes.subHeaderText}>
+						Want to connect? Feel free to get in touch with me!
+					</Typography>
+					<Divider />
+					<Grid container justify='space-between' align='center'>
+						<Grid item xs={5}>
+							<List style={{ display: 'inline-block' }}>
+								<ListItem>
+									<Button className={classes.button}>
+										<LinkedInIcon />
+										www.linkedin.com/in/david-heisel
+									</Button>
+								</ListItem>
+								<ListItem>
+									<Button className={classes.button}>
+										<AlternateEmailIcon />
+										d.m.heisel@gmail.com
+									</Button>
+								</ListItem>
+							</List>
+						</Grid>
+						<Grid item xs={5}>
+							<List style={{ display: 'inline-block' }}>
+								<ListItem>
+									<Button
+										className={classes.button}
+										style={{ display: 'flex', alignItems: 'baseline' }}>
+										<Avatar
+											src={GitHubMark}
+											style={{ height: '24px', width: '24px' }}
+										/>
+										<Typography variant='button'>
+											github.com/dmheisel
+										</Typography>
+									</Button>
+								</ListItem>
+								<ListItem>
+									<Button className={classes.button}>
+										<InstagramIcon />
+										instagram.com/dheis3l
+									</Button>
+								</ListItem>
+							</List>
+						</Grid>
 					</Grid>
-					<Grid item xs={5}>
-						<List style={{ display: 'inline-block' }}>
-							<ListItem>
-								<Button
-									className={classes.button}
-									style={{ display: 'flex', alignItems: 'baseline' }}>
-									<Avatar
-										src={GitHubMark}
-										style={{ height: '24px', width: '24px' }}
-									/>
-									<Typography variant='button'>github.com/dmheisel</Typography>
-								</Button>
-							</ListItem>
-							<ListItem>
-								<Button className={classes.button}>
-									<InstagramIcon />
-									instagram.com/dheis3l
-								</Button>
-							</ListItem>
-						</List>
-					</Grid>
-				</Grid>
 
-				<Divider />
-			</Paper>
+					<Divider />
+				</Paper>
+			</Element>
 		);
 	}
 }
