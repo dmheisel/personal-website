@@ -10,7 +10,8 @@ const styles = theme => ({
 		position: 'fixed',
 		width: '100vw',
 		display: 'flex',
-		justifyContent: 'flex-end'
+		justifyContent: 'flex-end',
+		zIndex: 1
 	},
 	button: {
 		padding: theme.spacing(1),

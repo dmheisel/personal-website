@@ -14,14 +14,22 @@ import JavaScriptIcon from '../ExternalIcons/Javascript.svg';
 const styles = theme => ({
 	root: {
 		backgroundColor: 'rgba(58, 10, 48, .85)',
-		padding: '50px 20%',
+		// padding: '50px 0',
 		minHeight: '100vh'
 	},
+	header: {
+		width: '100vw',
+		height: '20vh',
+		align: 'center',
+		justify: 'center',
+		backgroundColor: 'rgba(58, 10, 48, 1)'
+	},
 	headerText: {
-		padding: '25px'
+		padding: '5vh'
 	},
 	portfolioGrid: {
-		padding: '20px 0'
+		padding: '20px 20%',
+		height: '80vh'
 	},
 	image: {
 		maxHeight: '650px',
@@ -39,12 +47,14 @@ class Portfolio extends Component {
 		return (
 			<Element id='Portfolio' name='Portfolio'>
 				<Paper className={classes.root}>
-					<Typography
-						align='center'
-						variant='h2'
-						className={classes.headerText}>
-						Projects
-					</Typography>
+					<div className={classes.header}>
+						<Typography
+							align='center'
+							variant='h2'
+							className={classes.headerText}>
+							Projects
+						</Typography>
+					</div>
 					<Divider />
 					<Grid container className={classes.portfolioGrid}>
 						<Grid item container xs={12} justify='space-between' align='center'>

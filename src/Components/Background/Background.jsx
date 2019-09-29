@@ -18,14 +18,20 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = theme => ({
 	root: {
 		backgroundColor: 'rgba(10, 58, 31, 0.85)',
-		padding: '50px 10%',
 		minHeight: '100vh'
 	},
 	contentGrid: {
-		padding: '20px 0'
+		padding: '20px 10%'
+	},
+	header: {
+		width: '100vw',
+		height: '20vh',
+		align: 'center',
+		justify: 'center',
+		backgroundColor: 'rgba(10, 58, 31, 1)'
 	},
 	headerText: {
-		padding: '25px'
+		padding: '5vh'
 	}
 });
 class Background extends Component {
@@ -34,19 +40,21 @@ class Background extends Component {
 		return (
 			<Element id='Background' name='Background'>
 				<Paper className={classes.root}>
-					<Typography
-						variant='h2'
-						align='center'
-						className={classes.headerText}>
-						Experience
-					</Typography>
+					<div className={classes.header}>
+						<Typography
+							variant='h2'
+							align='center'
+							className={classes.headerText}>
+							Experience
+						</Typography>
+					</div>
 					<Divider />
 					<Grid container spacing={4} className={classes.contentGrid}>
 						<Grid item md={8} xs={12}>
 							<Card>
 								<CardHeader
 									title='Prime Digital Academy'
-									subheader='June 2019 - October 2019'
+									subheader='Full Stack Engineering Student'
 								/>
 								<CardContent>
 									<List dense>
@@ -84,16 +92,22 @@ class Background extends Component {
 											</ListItemText>
 										</ListItem>
 									</List>
+									<Typography
+										variant='caption'
+										align='right'
+										style={{ display: 'block' }}>
+										June 2019 - October 2019 Graduation
+									</Typography>
 								</CardContent>
 							</Card>
 						</Grid>
 					</Grid>
-					<Grid container justify='flex-end'>
+					<Grid container justify='flex-end' className={classes.contentGrid}>
 						<Grid item md={8} xs={12}>
 							<Card>
 								<CardHeader
-									title='Financial Worker, St Louis County PHHS'
-									subheader='August 2013 - June 2019'
+									title='St Louis County PHHS'
+									subheader='Long Term Care Financial Worker'
 									align='right'
 								/>
 								<CardContent>
@@ -130,6 +144,12 @@ class Background extends Component {
 											</ListItemText>
 										</ListItem>
 									</List>
+									<Typography
+										variant='caption'
+										align='right'
+										style={{ display: 'block' }}>
+										August 2013 - June 2019
+									</Typography>
 								</CardContent>
 							</Card>
 						</Grid>
