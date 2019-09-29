@@ -65,9 +65,10 @@ class Contact extends Component {
 					<Divider />
 					<Typography
 						align='center'
-						variant='h5'
+						variant='h4'
 						className={classes.subHeaderText}>
-						Want to connect? Get in touch with me!
+						Want to get in touch? <br />
+						<br /> Here's how!
 					</Typography>
 					<Divider />
 					<Grid
@@ -77,35 +78,33 @@ class Contact extends Component {
 						direction='row'
 						className={classes.contentGrid}>
 						<List>
-								<ListItem>
-									<Button className={classes.button}>
-										<LinkedInIcon />
-										linkedin.com/in/dheisel
-									</Button>
-								</ListItem>
-								<ListItem>
-									<Button className={classes.button}>
-										<AlternateEmailIcon />
-										d.m.heisel@gmail.com
-									</Button>
-								</ListItem>
-								<ListItem>
-									<Button className={classes.button}>
-										<Avatar
-											src={GitHubMark}
-											style={{ height: '24px', width: '24px' }}
-										/>
-										<Typography variant='button'>
-											github.com/dmheisel
-										</Typography>
-									</Button>
-								</ListItem>
-								<ListItem>
-									<Button className={classes.button}>
-										<InstagramIcon />
-										instagram.com/dheis3l
-									</Button>
-								</ListItem>
+							<ListItem>
+								<Button className={classes.button}>
+									<LinkedInIcon />
+									linkedin.com/in/dheisel
+								</Button>
+							</ListItem>
+							<ListItem>
+								<Button className={classes.button}>
+									<AlternateEmailIcon />
+									d.m.heisel@gmail.com
+								</Button>
+							</ListItem>
+							<ListItem>
+								<Button className={classes.button}>
+									<Avatar
+										src={GitHubMark}
+										style={{ height: '24px', width: '24px' }}
+									/>
+									<Typography variant='button'>github.com/dmheisel</Typography>
+								</Button>
+							</ListItem>
+							<ListItem>
+								<Button className={classes.button}>
+									<InstagramIcon />
+									instagram.com/dheis3l
+								</Button>
+							</ListItem>
 						</List>
 					</Grid>
 
