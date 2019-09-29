@@ -37,10 +37,12 @@ const styles = theme => ({
 		padding: '50px'
 	},
 	contentGrid: {
-		padding: '20px 10%'
+		padding: '20px 5%'
 	},
 	button: {
-		display: 'block',
+		display: 'contents',
+		width: 'auto',
+		// noWrap: true,
 		margin: theme.spacing(1),
 		padding: theme.spacing(0)
 	}
@@ -53,13 +55,13 @@ class Contact extends Component {
 			<Element id='Contact' name='Contact'>
 				<Paper className={classes.root}>
 					<div className={classes.header}>
-					<Typography
-						align='center'
-						variant='h2'
-						className={classes.headerText}>
-						Contact
-					</Typography>
-						</div>
+						<Typography
+							align='center'
+							variant='h2'
+							className={classes.headerText}>
+							Contact
+						</Typography>
+					</div>
 					<Divider />
 					<Typography
 						align='center'
@@ -67,32 +69,34 @@ class Contact extends Component {
 						className={classes.subHeaderText}>
 						Want to connect? Get in touch with me!
 					</Typography>
-					<Grid container justify='center' align='center' className={classes.contentGrid}>
-						<Grid container item justify='center' xs={12} md={6}>
-							<Grid item xs={12}>
-								<List style={{ display: 'block', margin: 'auto' }}>
+					<Divider />
+					<Grid
+						container
+						justify='center'
+						align='center'
+						direction='row'
+						className={classes.contentGrid}>
+						<Grid container item justify='center'>
+							<List style={{ display: 'inline-flex' }}>
+								<Grid item xs={12} md={3}>
 									<ListItem>
 										<Button className={classes.button}>
 											<LinkedInIcon />
-											linkedin.com/in/david-heisel
+											linkedin.com/in/dheisel
 										</Button>
 									</ListItem>
+								</Grid>
+								<Grid item xs={12} md={3}>
 									<ListItem>
 										<Button className={classes.button}>
 											<AlternateEmailIcon />
 											d.m.heisel@gmail.com
 										</Button>
 									</ListItem>
-								</List>
-							</Grid>
-						</Grid>
-						<Grid item container justify='center' xs={12} md={6}>
-							<Grid>
-								<List style={{ display: 'block', margin: 'auto' }}>
+								</Grid>
+								<Grid item xs={12} md={3}>
 									<ListItem>
-										<Button
-											className={classes.button}
-											style={{ display: 'flex', alignItems: 'baseline' }}>
+										<Button className={classes.button}>
 											<Avatar
 												src={GitHubMark}
 												style={{ height: '24px', width: '24px' }}
@@ -102,15 +106,22 @@ class Contact extends Component {
 											</Typography>
 										</Button>
 									</ListItem>
+								</Grid>
+								<Grid item xs={12} md={3}>
 									<ListItem>
 										<Button className={classes.button}>
 											<InstagramIcon />
 											instagram.com/dheis3l
 										</Button>
 									</ListItem>
-								</List>
-							</Grid>
+								</Grid>
+							</List>
 						</Grid>
+						{/* <Grid item container justify='center' xs={12} md={5}>
+							<Grid item xs={12}>
+								<List style={{ display: 'block', margin: 'auto' }}></List>
+							</Grid>
+						</Grid> */}
 					</Grid>
 
 					<Divider />
