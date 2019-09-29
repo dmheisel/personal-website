@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
 import NavbarTab from './NavbarTab';
-import { Toolbar, Tabs } from '@material-ui/core';
+import { Tabs } from '@material-ui/core';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
 	toolBar: {
 		position: 'fixed',
-		width: '100vw',
 		display: 'flex',
-		// justifyContent: 'flex-end',
 		zIndex: 1,
-		[theme.breakpoints.down('sm')] : {
-			backgroundColor: theme.palette.background.default,
-			justifyContent: 'center'
+		[theme.breakpoints.up('md')]: {
+			left: '25px',
+			top: '25px'
 		},
+		[theme.breakpoints.down('sm')]: {
+			backgroundColor: theme.palette.background.default,
+			width: '100vw',
+			justifyContent: 'center'
+		}
 	},
 	button: {
 		padding: theme.spacing(1),
 		margin: theme.spacing(1)
 	}
-
 });
 class Navbar extends Component {
 	state = {
@@ -35,12 +37,13 @@ class Navbar extends Component {
 		const { classes } = this.props;
 		return (
 			// <Toolbar className={classes.toolBar}>
-		<div className={classes.toolBar}>
+			<div className={classes.toolBar}>
 				{isWidthUp('sm', this.props.width) ? (
 					<Tabs
 						orientation='vertical'
-						// variant='standard'
-						value={this.state.value}>
+						value={this.state.value}
+						textColor='secondary'
+						indicatorColor='primary'>
 						<NavbarTab to='About' value={0} handleClick={this.handleClick} />
 						<NavbarTab
 							to='Portfolio'
@@ -69,9 +72,8 @@ class Navbar extends Component {
 						/>
 						<NavbarTab to='Contact' value={3} handleClick={this.handleClick} />
 					</Tabs>
-					)}
-				</div>
-			// </Toolbar>
+				)}
+			</div>
 		);
 	}
 }

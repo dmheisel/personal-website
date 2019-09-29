@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
+import Fade from 'react-reveal/Fade';
 import { CssBaseline } from '@material-ui/core';
 import AboutMe from '../AboutMe/AboutMe';
 import Navbar from '../Navbar/Navbar';
@@ -9,7 +10,6 @@ import Background from '../Background/Background';
 import Skills from '../Skills/Skills';
 
 class App extends Component {
-
 	render() {
 		return (
 			<React.Fragment>
@@ -20,7 +20,9 @@ class App extends Component {
 					bgImageAlt='stone stairs and tree'
 					strength={-700}>
 					<Navbar />
-					<AboutMe  />
+					<Fade left>
+						<AboutMe />
+					</Fade>
 					{/* <Parallax
 						blur={0}
 					bgImage={require('../Views/')} */}
@@ -31,21 +33,27 @@ class App extends Component {
 					bgImage={require('../Views/PontDuGardTree.jpg')}
 					bgImageAlt='Tree at Pont du Gard'
 					strength={500}>
-					<Portfolio onScroll={e => this.handleScroll(e)} />
+					<Fade right>
+						<Portfolio/>
+					</Fade>
 				</Parallax>
 				<Parallax
 					blur={0}
 					bgImage={require('../Views/Castelneau.jpg')}
 					bgImageAlt='Castelneau vista'
 					strength={-500}>
-					<Background />
+					<Fade top>
+						<Background />
+					</Fade>
 				</Parallax>
 				<Parallax
 					blur={0}
 					bgImage={require('../Views/PontDuGard.jpg')}
 					bgImageAlt='Pont Du Gard'
 					strength={500}>
-					<Contact />
+					<Fade bottom>
+						<Contact />
+					</Fade>
 				</Parallax>
 			</React.Fragment>
 		);

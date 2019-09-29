@@ -41,7 +41,7 @@ const styles = theme => ({
 	},
 	button: {
 		display: 'contents',
-		width: 'auto',
+		width: 'auto'
 		// noWrap: true,
 		// margin: theme.spacing(1),
 		// padding: theme.spacing(0)
@@ -76,47 +76,37 @@ class Contact extends Component {
 						align='center'
 						direction='row'
 						className={classes.contentGrid}>
-						<Grid container item justify='center'>
-							<List>
-								<Grid item xs={12} md={2}>
-									<ListItem>
-										<Button className={classes.button}>
-											<LinkedInIcon />
-											linkedin.com/in/dheisel
-										</Button>
-									</ListItem>
-								</Grid>
-								<Grid item xs={12} md={2}>
-									<ListItem>
-										<Button className={classes.button}>
-											<AlternateEmailIcon />
-											d.m.heisel@gmail.com
-										</Button>
-									</ListItem>
-								</Grid>
-								<Grid item xs={12} md={2}>
-									<ListItem>
-										<Button className={classes.button}>
-											<Avatar
-												src={GitHubMark}
-												style={{ height: '24px', width: '24px' }}
-											/>
-											<Typography variant='button'>
-												github.com/dmheisel
-											</Typography>
-										</Button>
-									</ListItem>
-								</Grid>
-								<Grid item xs={12} md={2}>
-									<ListItem>
-										<Button className={classes.button}>
-											<InstagramIcon />
-											instagram.com/dheis3l
-										</Button>
-									</ListItem>
-								</Grid>
-							</List>
-						</Grid>
+						<List>
+								<ListItem>
+									<Button className={classes.button}>
+										<LinkedInIcon />
+										linkedin.com/in/dheisel
+									</Button>
+								</ListItem>
+								<ListItem>
+									<Button className={classes.button}>
+										<AlternateEmailIcon />
+										d.m.heisel@gmail.com
+									</Button>
+								</ListItem>
+								<ListItem>
+									<Button className={classes.button}>
+										<Avatar
+											src={GitHubMark}
+											style={{ height: '24px', width: '24px' }}
+										/>
+										<Typography variant='button'>
+											github.com/dmheisel
+										</Typography>
+									</Button>
+								</ListItem>
+								<ListItem>
+									<Button className={classes.button}>
+										<InstagramIcon />
+										instagram.com/dheis3l
+									</Button>
+								</ListItem>
+						</List>
 					</Grid>
 
 					<Divider />

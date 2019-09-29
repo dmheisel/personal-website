@@ -25,7 +25,7 @@ const styles = theme => ({
 });
 
 class AboutMe extends Component {
-	
+
 	render() {
 		const { classes } = this.props;
 		return (

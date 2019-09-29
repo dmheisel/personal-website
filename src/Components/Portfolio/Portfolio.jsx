@@ -13,16 +13,16 @@ import JavaScriptIcon from '../ExternalIcons/Javascript.svg';
 
 const styles = theme => ({
 	root: {
-		backgroundColor: 'rgba(58, 10, 48, .85)',
+		backgroundColor: 'rgba(58, 40, 10, 0.85)',
 		// padding: '50px 0',
-		minHeight: '100vh',
+		minHeight: '100vh'
 	},
 	header: {
 		width: '100vw',
 		height: '20vh',
 		align: 'center',
 		justify: 'center',
-		backgroundColor: 'rgba(58, 10, 48, 1)'
+		backgroundColor: 'rgba(58, 40, 10, 1)'
 	},
 	headerText: {
 		padding: '5vh'
