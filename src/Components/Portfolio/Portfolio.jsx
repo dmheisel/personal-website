@@ -22,7 +22,11 @@ const styles = theme => ({
 		height: '20vh',
 		align: 'center',
 		justify: 'center',
-		backgroundColor: 'rgba(58, 40, 10, 1)'
+		backgroundColor: 'rgba(58, 40, 10, 1)',
+		[theme.breakpoints.down('sm')]: {
+			paddingTop: '25px'
+			// minHeight: '95vh'
+		}
 	},
 	headerText: {
 		padding: '5vh'
