@@ -13,6 +13,7 @@ class NavbarTab extends Component {
 					value={this.props.value}
 					index={this.props.value}
 					onClick={() => this.props.handleClick(this.props.value)}
+					style={{display: 'inline-block'}}
 				/>
 			</ScrollLink>
 		);

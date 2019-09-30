@@ -18,8 +18,7 @@ const styles = theme => ({
 	headShot: {
 		height: '250px',
 		width: '250px',
-		margin: 'auto'
-		// margin: theme.spacing(2)
+		margin: theme.spacing(3),
 	},
 	titleText: {
 		fontWeight: 'bolder',
@@ -32,13 +31,14 @@ class AboutMe extends Component {
 		const { classes } = this.props;
 		return (
 			<Element id='About' name='about' className={classes.backgroundColor}>
-				<Fade left>
-					<Grid
-						className={classes.root}
-						container
-						spacing={3}
-						justify='center'
-						alignItems='center'>
+				<Grid
+					className={classes.root}
+					container
+					spacing={4}
+					justify='space-evenly'
+					alignItems='center'
+				direction="column">
+					<Fade left cascade>
 						<Grid item xs={12}>
 							<Avatar src={Headshot} className={classes.headShot} />
 						</Grid>
@@ -58,8 +58,8 @@ class AboutMe extends Component {
 								Full Stack Software Engineer in the Twin Cities
 							</Typography>
 						</Grid>
-					</Grid>
-				</Fade>
+					</Fade>
+				</Grid>
 			</Element>
 		);
 	}

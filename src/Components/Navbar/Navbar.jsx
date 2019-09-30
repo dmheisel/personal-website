@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import NavbarTab from './NavbarTab';
+import Fade from 'react-reveal'
 import { Tabs } from '@material-ui/core';
-import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
+import withWidth, { isWidthUp, isWidthDown } from '@material-ui/core/withWidth';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
@@ -38,7 +39,8 @@ class Navbar extends Component {
 		return (
 			// <Toolbar className={classes.toolBar}>
 			<div className={classes.toolBar}>
-				{isWidthUp('sm', this.props.width) ? (
+				<Fade top cascade>
+				{isWidthUp('md', this.props.width) ? (
 					<Tabs
 						orientation='vertical'
 						value={this.state.value}
@@ -72,7 +74,8 @@ class Navbar extends Component {
 						/>
 						<NavbarTab to='Contact' value={3} handleClick={this.handleClick} />
 					</Tabs>
-				)}
+						)}
+					</Fade>
 			</div>
 		);
 	}
