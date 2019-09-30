@@ -18,7 +18,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
 	root: {
-		backgroundColor: 'rgba(10, 58, 31, 0.85)'
+		backgroundColor: 'rgba(10, 58, 31, 0.60)'
 		// minHeight: '100vh',
 	},
 	contentGrid: {
@@ -26,11 +26,14 @@ const styles = theme => ({
 	},
 	header: {
 		width: '100vw',
-		height: '20vh',
 		align: 'center',
 		justify: 'center',
 		backgroundColor: 'rgba(10, 58, 31, 1)',
+		[theme.breakpoints.up('md')]: {
+			height: '15vh'
+		},
 		[theme.breakpoints.down('sm')]: {
+			height: '20vh',
 			paddingTop: '25px'
 			// minHeight: '95vh'
 		}

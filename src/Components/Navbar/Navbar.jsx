@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NavbarTab from './NavbarTab';
 import Fade from 'react-reveal'
 import { Tabs } from '@material-ui/core';
-import withWidth, { isWidthUp, isWidthDown } from '@material-ui/core/withWidth';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
@@ -12,7 +12,7 @@ const styles = theme => ({
 		zIndex: 1,
 		[theme.breakpoints.up('md')]: {
 			left: '25px',
-			top: '25px'
+			top: '15vh'
 		},
 		[theme.breakpoints.down('sm')]: {
 			backgroundColor: theme.palette.background.default,
