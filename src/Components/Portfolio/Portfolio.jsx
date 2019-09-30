@@ -13,7 +13,7 @@ import JavaScriptIcon from '../ExternalIcons/Javascript.svg';
 
 const styles = theme => ({
 	root: {
-		backgroundColor: 'rgba(58, 40, 10, 0.60)',
+		backgroundColor: 'rgba(58, 40, 10, 0.75)',
 		// padding: '50px 0',
 		minHeight: '100vh'
 	},

@@ -13,7 +13,7 @@ const theme = createMuiTheme({
 		primary: teal,
 		secondary: deepOrange,
 		background: {
-			paper: 'rgba(10, 45, 58, 0.60)',
+			paper: 'rgba(10, 45, 58, 0.75)',
 			default: '#424242'
 		}
 	}

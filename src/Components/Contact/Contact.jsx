@@ -19,7 +19,7 @@ import GitHubMark from '../ExternalIcons/GitHub-Mark-Light-64px.png';
 
 const styles = theme => ({
 	root: {
-		backgroundColor: 'rgba(68, 68, 13, 0.6)',
+		backgroundColor: 'rgba(68, 68, 13, 0.75)',
 		minHeight: '100vh'
 		// margin: 'auto'
 	},

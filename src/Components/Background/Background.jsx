@@ -18,7 +18,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
 	root: {
-		backgroundColor: 'rgba(10, 58, 31, 0.60)'
+		backgroundColor: 'rgba(10, 58, 31, 0.75)'
 		// minHeight: '100vh',
 	},
 	contentGrid: {
