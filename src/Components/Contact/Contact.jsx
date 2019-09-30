@@ -89,11 +89,11 @@ class Contact extends Component {
 								<ListItem>
 									<Button
 										className={classes.button}
-										href='https://www.linkedin.com/in/dheisel'
+										href='https://www.linkedin.com/in/dmheisel'
 										target='_blank'
 										ref='noopener noreferrer'>
 										<LinkedInIcon />
-										linkedin.com/in/dheisel
+										linkedin.com/in/dmheisel
 									</Button>
 								</ListItem>
 								<ListItem>
