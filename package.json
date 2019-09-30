@@ -2,8 +2,7 @@
 	"name": "personal-website",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "dmheisel.com",
-	"homepage": "https://www.dmheisel.com",
+	"homepage": "https://dmheisel.com",
 	"dependencies": {
 		"@material-ui/core": "^4.4.3",
 		"@material-ui/icons": "^4.4.3",
