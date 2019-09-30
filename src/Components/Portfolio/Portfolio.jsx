@@ -40,7 +40,6 @@ const styles = theme => ({
 	},
 	portfolioItem: {
 		minHeight: '40vh',
-		maxHeight: '50vh',
 	},
 	image: {
 		maxHeight: '70vh',

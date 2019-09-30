@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
 import { CssBaseline } from '@material-ui/core';
-import AboutMe from '../AboutMe/AboutMe';
+import Header from '../Header/Header';
 import Navbar from '../Navbar/Navbar';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
@@ -18,7 +18,7 @@ class App extends Component {
 					bgImageAlt='stone stairs and tree'
 					strength={500}>
 					<Navbar />
-					<AboutMe />
+					<Header />
 					<Portfolio />
 				</Parallax>
 				<Parallax
