@@ -44,7 +44,7 @@ class Navbar extends Component {
 						<Tabs
 							orientation='vertical'
 							value={this.state.value}
-							textColor='secondary'
+							textColor="primary"
 							indicatorColor='primary'>
 							<NavbarTab to='About' value={0} handleClick={this.handleClick} />
 							<NavbarTab

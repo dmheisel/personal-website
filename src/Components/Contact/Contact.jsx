@@ -69,7 +69,7 @@ class Contact extends Component {
 								Contact
 							</Typography>
 						</div>
-						<Divider variant="middle"/>
+						<Divider variant='middle' />
 						<Typography
 							align='center'
 							variant='h4'
@@ -77,7 +77,7 @@ class Contact extends Component {
 							Want to get in touch? <br />
 							<br /> Here's where you can find me!
 						</Typography>
-						<Divider variant="middle"/>
+						<Divider variant='middle' />
 						<Grid
 							container
 							justify='center'
@@ -96,12 +96,6 @@ class Contact extends Component {
 									</Button>
 								</ListItem>
 								<ListItem>
-									<Button className={classes.button}>
-										<AlternateEmailIcon />
-										d.m.heisel@gmail.com
-									</Button>
-								</ListItem>
-								<ListItem>
 									<Button
 										className={classes.button}
 										href='https://www.github.com/dmheisel'
@@ -116,10 +110,20 @@ class Contact extends Component {
 										</Typography>
 									</Button>
 								</ListItem>
+								<ListItem>
+									<Button
+										className={classes.button}
+										aria-label='email'
+										target='_blank'
+										href="mailto:david@dmheisel.com?subject=Inquiry on David Heisel's Portfolio&body=Hey David!">
+										<AlternateEmailIcon />
+										d.m.heisel@gmail.com
+									</Button>
+								</ListItem>
 							</List>
 						</Grid>
 
-						<Divider variant="middle" />
+						<Divider variant='middle' />
 					</Fade>
 				</Paper>
 			</Element>
