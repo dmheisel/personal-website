@@ -13,7 +13,6 @@ import {
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import InstagramIcon from '@material-ui/icons/Instagram';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import GitHubMark from '../ExternalIcons/GitHub-Mark-Light-64px.png';
 
@@ -76,7 +75,7 @@ class Contact extends Component {
 							variant='h4'
 							className={classes.subHeaderText}>
 							Want to get in touch? <br />
-							<br /> Here's how you can find me!
+							<br /> Here's where you can find me!
 						</Typography>
 						<Divider variant="middle"/>
 						<Grid
@@ -117,12 +116,6 @@ class Contact extends Component {
 										</Typography>
 									</Button>
 								</ListItem>
-								{/* <ListItem>
-									<Button className={classes.button}>
-										<InstagramIcon />
-										instagram.com/dheis3l
-									</Button>
-								</ListItem> */}
 							</List>
 						</Grid>
 

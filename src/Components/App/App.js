@@ -6,7 +6,6 @@ import Navbar from '../Navbar/Navbar';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 import Background from '../Background/Background';
-import Skills from '../Skills/Skills';
 
 class App extends Component {
 	render() {
