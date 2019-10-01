@@ -15,6 +15,7 @@ import { withStyles } from '@material-ui/core/styles';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import GitHubMark from '../ExternalIcons/GitHub-Mark-Light-64px.png';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 const styles = theme => ({
 	root: {
@@ -61,15 +62,10 @@ class Contact extends Component {
 			<Element id='Contact' name='Contact'>
 				<Paper className={classes.root}>
 					<Fade bottom cascade>
-						<div className={classes.header}>
-							<Typography
-								align='center'
-								variant='h2'
-								className={classes.headerText}>
-								Contact
-							</Typography>
-						</div>
-						<Divider variant='middle' />
+						<SectionHeader
+							backgroundColor='rgba(68, 68, 13, 1)'
+							text='Contact'
+						/>
 						<Typography
 							align='center'
 							variant='h4'

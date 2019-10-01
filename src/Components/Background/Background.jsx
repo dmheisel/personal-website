@@ -15,6 +15,7 @@ import {
 	ListItemText
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 const styles = theme => ({
 	root: {
@@ -23,20 +24,6 @@ const styles = theme => ({
 	},
 	contentGrid: {
 		padding: '20px 15%'
-	},
-	header: {
-		width: '100vw',
-		align: 'center',
-		justify: 'center',
-		backgroundColor: 'rgba(10, 58, 31, 1)',
-		[theme.breakpoints.up('md')]: {
-			height: '15vh'
-		},
-		[theme.breakpoints.down('sm')]: {
-			height: '20vh',
-			paddingTop: '25px'
-			// minHeight: '95vh'
-		}
 	},
 	headerText: {
 		padding: '5vh'
@@ -49,14 +36,7 @@ class Background extends Component {
 			<Element id='Background' name='Background'>
 				<Paper className={classes.root}>
 					<Fade top cascade>
-						<div className={classes.header}>
-							<Typography
-								variant='h2'
-								align='center'
-								className={classes.headerText}>
-								Experience
-							</Typography>
-						</div>
+						<SectionHeader backgroundColor="rgba(10, 58, 31, 1)" text="Background"/>
 						<Divider />
 						<Grid
 							container

@@ -39,7 +39,7 @@ class Navbar extends Component {
 		return (
 			// <Toolbar className={classes.toolBar}>
 			<div className={classes.toolBar}>
-				<Fade top cascade>
+				<Fade left cascade>
 					{isWidthUp('md', this.props.width) ? (
 						<Tabs
 							orientation='vertical'
@@ -47,25 +47,26 @@ class Navbar extends Component {
 							textColor="primary"
 							indicatorColor='primary'>
 							<NavbarTab to='About' value={0} handleClick={this.handleClick} />
+							<NavbarTab to="Bio" value={1} handleClick={this.handleClick} />
 							<NavbarTab
 								to='Portfolio'
-								value={1}
-								handleClick={this.handleClick}
-							/>
-							<NavbarTab
-								to='Background'
 								value={2}
 								handleClick={this.handleClick}
 							/>
 							<NavbarTab
-								to='Contact'
+								to='Background'
 								value={3}
+								handleClick={this.handleClick}
+							/>
+							<NavbarTab
+								to='Contact'
+								value={4}
 								handleClick={this.handleClick}
 							/>
 							<Tab
 								label='Resume'
-								value={4}
-								index={4}
+								value={5}
+								index={5}
 								style={{ display: 'block' }}
 								href='https://docs.google.com/document/d/1cmX_RTbqVxVoztQxzf3Lb4jTTV4hmUIv9YPyYayBfRI/edit?usp=sharing'
 								target='_blank'

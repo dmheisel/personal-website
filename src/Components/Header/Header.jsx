@@ -38,7 +38,7 @@ class AboutMe extends Component {
 					justify='space-evenly'
 					alignItems='center'
 				direction="column">
-					<Fade left cascade>
+					<Fade top cascade>
 						<Grid item xs={12}>
 							<Avatar src={Headshot} className={classes.headShot} />
 						</Grid>

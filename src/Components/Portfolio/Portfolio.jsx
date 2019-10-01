@@ -10,6 +10,7 @@ import ReactIcon from '../ExternalIcons/React.svg';
 import ReduxIcon from '../ExternalIcons/redux.svg';
 import NodeJsIcon from '../ExternalIcons/nodeJs.svg';
 import JavaScriptIcon from '../ExternalIcons/Javascript.svg';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 const styles = theme => ({
 	root: {
@@ -17,33 +18,20 @@ const styles = theme => ({
 		// padding: '50px 0',
 		minHeight: '100vh'
 	},
-	header: {
-		width: '100vw',
-		align: 'center',
-		justify: 'center',
-		backgroundColor: 'rgba(58, 40, 10, 1)',
-		[theme.breakpoints.up('md')]: {
-			height: '15vh'
-		},
-		[theme.breakpoints.down('sm')]: {
-			height: '20vh',
-			paddingTop: '25px'
-			// minHeight: '95vh'
-		}
-	},
-	headerText: {
-		padding: '5vh'
-	},
 	portfolioGrid: {
 		padding: '20px 20%',
 		minHeight: '90vh'
 	},
 	portfolioItem: {
-		minHeight: '40vh',
+		maxHeight: '50vh',
 	},
-	image: {
-		maxHeight: '70vh',
-		maxWidth: '60vw'
+	imageContainer: {
+		height: '50vh',
+		width: '30vw',
+		backgroundImage: `url(${BYKRinfoWindow})`,
+		backgroundSize: 'cover',
+		backgroundPosition: 'top',
+		borderRadius: '15px'
 	},
 	icon: {
 		height: '50px',
@@ -58,22 +46,13 @@ class Portfolio extends Component {
 			<Element id='Portfolio' name='Portfolio'>
 				<Paper className={classes.root}>
 					<Fade right cascade>
-						<div className={classes.header}>
-							<Typography
-								align='center'
-								variant='h2'
-								className={classes.headerText}>
-								Projects
-							</Typography>
-						</div>
-						<Divider />
+						<SectionHeader backgroundColor="rgba(58, 40, 10, 1)" text="Portfolio" />
 						<Grid container className={classes.portfolioGrid}>
 							<Grid
 								item
 								container
 								xs={12}
 								justify='space-between'
-								align='center'
 								className={classes.portfolioItem}>
 								<Grid item container xs={12} md={4} direction='row'>
 									<Grid item xs={12}>
@@ -120,12 +99,13 @@ class Portfolio extends Component {
 										href='https://github.com/dmheisel/BYKR'
 										target='_blank'
 										rel='noopener noreferrer'>
-										<img
+										<div className={classes.imageContainer} />
+										{/* <img
 											src={BYKRinfoWindow}
 											className={classes.image}
 											style={{ borderRadius: '10px' }}
 											alt='BYKR view'
-										/>
+										/> */}
 									</a>
 								</Grid>
 							</Grid>

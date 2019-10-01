@@ -6,6 +6,7 @@ import Navbar from '../Navbar/Navbar';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 import Background from '../Background/Background';
+import Bio from '../Bio/Bio';
 
 class App extends Component {
 	render() {
@@ -19,6 +20,7 @@ class App extends Component {
 					strength={500}>
 					<Navbar />
 					<Header />
+					<Bio />
 					<Portfolio />
 				</Parallax>
 				<Parallax
