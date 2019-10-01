@@ -18,7 +18,7 @@ const styles = theme => ({
 		paddingBottom: '5%'
 	},
 	portfolioGrid: {
-		padding: '20px 20%',
+		padding: '20px 15%',
 		minHeight: '90vh'
 	}
 });

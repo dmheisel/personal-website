@@ -12,6 +12,7 @@ const styles = theme => ({
 	},
 	gridRoot: {
 		padding: '20px 20%',
+		marginTop: '25vh',
 		minHeight: '90vh'
 	},
 	headerText: {
@@ -25,45 +26,63 @@ class Bio extends Component {
 		return (
 			<Element id='Bio' name='Bio'>
 				<Paper className={classes.root}>
-					<SectionHeader
-						backgroundColor='rgba(33, 10, 58, 1)'
-						text='About Me'
-					/>
+					<SectionHeader backgroundColor='rgba(33, 10, 58, 1)' text='Bio' />
 					<Fade left cascade>
 						<Grid
 							container
 							// spacing={0}
 							direction='row'
-							alignItems='center'
+							alignItems='space-evenly'
 							justify='space-between'
 							className={classes.gridRoot}>
-							<Grid item container direction='column' xs={5}>
+							<Grid
+								item
+								container
+								direction='column'
+								// align='space-between'
+								xs={12}
+								md={5}>
 								<Grid item xs={12}>
-									<Typography variant='h3'>Lorem Ipsum</Typography>
-									<Typography paragraph>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-										ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										Duis aute irure dolor in reprehenderit in voluptate velit
-										esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-										occaecat cupidatat non proident, sunt in culpa qui officia
-										deserunt mollit anim id est laborum.
+									<Typography variant='h3' align='center'>
+										Who I Am
+									</Typography>
+									<Divider />
+									<Typography paragraph align='center'>
+										I'm a driven, energetic, and always-curious new software developer
+										in the Twin Cities, with a passion for problem-solving and
+										diving into new challenges head-on.
+									</Typography>
+									<Typography paragraph align='center'>
+										As a kid, I'd pull apart my dad's watches to see how they
+										worked. Now I get to play with technology and put that same
+										curiosity to use every day, creating new and exciting
+										software to drive the web forward.
 									</Typography>
 								</Grid>
 							</Grid>
-							<Grid item container direction='column' xs={5}>
+							<Grid
+								item
+								container
+								direction='column'
+								// align='space-between'
+								xs={12}
+								md={5}>
 								<Grid item xs={12}>
-									<Typography variant='h3'>Lorem Ipsum</Typography>
-									<Typography paragraph>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-										ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										Duis aute irure dolor in reprehenderit in voluptate velit
-										esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-										occaecat cupidatat non proident, sunt in culpa qui officia
-										deserunt mollit anim id est laborum.
+									<Typography variant='h3' align='center'>
+										What do I do?
+									</Typography>
+									<Divider />
+									<Typography paragraph align='center'>
+										I use tools such as JavaScript, Java, React, Redux,
+										PostgresQL, and NodeJs as a full-stack software engineer.
+										I'm a strong believer in the value of teamwork and
+										collaboration and always aim for improvement.
+									</Typography>
+									<Typography paragraph align='center'>
+										When I'm not at work or on my computer, I can often be found
+										on my bike or in my den with a pair of knitting needles. I'm
+										always learning something new and love exploring different
+										hobbies.
 									</Typography>
 								</Grid>
 							</Grid>

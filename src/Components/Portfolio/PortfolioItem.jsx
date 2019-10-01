@@ -15,7 +15,8 @@ const styles = theme => ({
 		width: '30vw',
 		backgroundSize: 'cover',
 		backgroundPosition: 'top',
-		borderRadius: '15px'
+		borderRadius: '15px',
+		padding: '20px'
 	}
 });
 

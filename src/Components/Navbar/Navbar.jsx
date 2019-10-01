@@ -46,7 +46,7 @@ class Navbar extends Component {
 							value={this.state.value}
 							textColor="primary"
 							indicatorColor='primary'>
-							<NavbarTab to='About' value={0} handleClick={this.handleClick} />
+							<NavbarTab to='Top' value={0} handleClick={this.handleClick} />
 							<NavbarTab to="Bio" value={1} handleClick={this.handleClick} />
 							<NavbarTab
 								to='Portfolio'

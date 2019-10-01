@@ -18,7 +18,7 @@ const styles = theme => ({
 	headShot: {
 		height: '250px',
 		width: '250px',
-		margin: theme.spacing(3),
+		margin: theme.spacing(3)
 	},
 	titleText: {
 		fontWeight: 'bolder',
@@ -30,14 +30,14 @@ class AboutMe extends Component {
 	render() {
 		const { classes } = this.props;
 		return (
-			<Element id='About' name='about' className={classes.backgroundColor}>
+			<Element id='Top' name='top' className={classes.backgroundColor}>
 				<Grid
 					className={classes.root}
 					container
 					spacing={4}
 					justify='space-evenly'
 					alignItems='center'
-				direction="column">
+					direction='column'>
 					<Fade top cascade>
 						<Grid item xs={12}>
 							<Avatar src={Headshot} className={classes.headShot} />
