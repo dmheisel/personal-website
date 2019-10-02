@@ -46,27 +46,27 @@ class Navbar extends Component {
 							value={this.state.value}
 							textColor="primary"
 							indicatorColor='primary'>
-							<NavbarTab to='Top' value={0} handleClick={this.handleClick} />
-							<NavbarTab to="Bio" value={1} handleClick={this.handleClick} />
+							{/* <NavbarTab to='Top' value={0} handleClick={this.handleClick} /> */}
+							<NavbarTab to="About" value={0} handleClick={this.handleClick} />
 							<NavbarTab
 								to='Portfolio'
-								value={2}
+								value={1}
 								handleClick={this.handleClick}
 							/>
 							<NavbarTab
 								to='Background'
-								value={3}
+								value={2}
 								handleClick={this.handleClick}
 							/>
 							<NavbarTab
 								to='Contact'
-								value={4}
+								value={3}
 								handleClick={this.handleClick}
 							/>
 							<Tab
 								label='Resume'
-								value={5}
-								index={5}
+								value={4}
+								index={4}
 								style={{ display: 'block' }}
 								href='https://docs.google.com/document/d/1cmX_RTbqVxVoztQxzf3Lb4jTTV4hmUIv9YPyYayBfRI/edit?usp=sharing'
 								target='_blank'

@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-import BYKRinfoWindow from '../Views/BYKR-Info-Window.png';
 import PortfolioTechList from './PortfolioTechList';
 
 const styles = theme => ({
 	portfolioItem: {
-    maxHeight: '70vh',
-    padding: '5% 0',
-    margin: theme.spacing(2)
+    // maxHeight: '70vh',
+    // padding: '5% 0',
+		margin: theme.spacing(1),
+		padding: theme.spacing(1)
 	},
 	imageContainer: {
-		height: '60vh',
-		width: '30vw',
+		height: '400px',
+		width: '300px',
 		backgroundSize: 'cover',
 		backgroundPosition: 'top',
 		borderRadius: '15px',
-		padding: '20px'
+		// padding: '20px'
 	}
 });
 

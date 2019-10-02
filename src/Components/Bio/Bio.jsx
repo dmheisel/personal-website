@@ -11,8 +11,8 @@ const styles = theme => ({
 		minHeight: '100vh'
 	},
 	gridRoot: {
-		padding: '20px 20%',
-		marginTop: '25vh',
+		padding: '10% 20%',
+		// marginTop: '25vh',
 		minHeight: '90vh'
 	},
 	headerText: {
@@ -24,15 +24,18 @@ class Bio extends Component {
 	render() {
 		const { classes } = this.props;
 		return (
-			<Element id='Bio' name='Bio'>
+			<Element id='About' name='About'>
 				<Paper className={classes.root}>
-					<SectionHeader backgroundColor='rgba(33, 10, 58, 1)' text='Bio' />
+					<SectionHeader
+						backgroundColor='rgba(33, 10, 58, 1)'
+						text='About Me'
+					/>
 					<Fade left cascade>
 						<Grid
 							container
 							// spacing={0}
 							direction='row'
-							alignItems='space-evenly'
+							align='space-evenly'
 							justify='space-between'
 							className={classes.gridRoot}>
 							<Grid
@@ -44,13 +47,13 @@ class Bio extends Component {
 								md={5}>
 								<Grid item xs={12}>
 									<Typography variant='h3' align='center'>
-										Who I Am
+										Who I Am.
 									</Typography>
 									<Divider />
 									<Typography paragraph align='center'>
-										I'm a driven, energetic, and always-curious new software developer
-										in the Twin Cities, with a passion for problem-solving and
-										diving into new challenges head-on.
+										I'm a driven, energetic, and always-curious new software
+										developer in the Twin Cities, with a passion for
+										problem-solving and diving into new challenges head-on.
 									</Typography>
 									<Typography paragraph align='center'>
 										As a kid, I'd pull apart my dad's watches to see how they
@@ -64,19 +67,19 @@ class Bio extends Component {
 								item
 								container
 								direction='column'
-								// align='space-between'
+								align='center'
 								xs={12}
 								md={5}>
 								<Grid item xs={12}>
 									<Typography variant='h3' align='center'>
-										What do I do?
+										What I Do.
 									</Typography>
 									<Divider />
 									<Typography paragraph align='center'>
-										I use tools such as JavaScript, Java, React, Redux,
-										PostgresQL, and NodeJs as a full-stack software engineer.
-										I'm a strong believer in the value of teamwork and
-										collaboration and always aim for improvement.
+										I use modern technology to build some pretty cool stuff --
+										check out some of my work below. I'm a strong believer in
+										the value of teamwork and collaboration and always aim for
+										improvement.
 									</Typography>
 									<Typography paragraph align='center'>
 										When I'm not at work or on my computer, I can often be found

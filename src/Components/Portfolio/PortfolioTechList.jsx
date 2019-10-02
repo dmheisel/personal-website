@@ -41,7 +41,7 @@ class PortfolioTechList extends Component {
 		const gridImages =
 			this.props.techList &&
 			this.props.techList.map(item => (
-				<Grid item xs>
+				<Grid item xs key={item}>
 					<Tooltip title={item}>
 						<img
 							className={classes.icon}
@@ -59,7 +59,7 @@ class PortfolioTechList extends Component {
 					</Typography>
 				</Grid>
 				{gridImages}
-				
+
 			</Grid>
 		);
 	}

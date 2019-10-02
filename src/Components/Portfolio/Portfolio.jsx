@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
-import { Grid, Typography, Paper, Divider } from '@material-ui/core';
+import { Grid, Paper, Divider } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import BYKRinfoWindow from '../Views/BYKR-Info-Window.png';
 import GalleryScreen from '../Views/Gallery.png';
