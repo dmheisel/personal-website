@@ -6,6 +6,6 @@ Hosted on [www.dmheisel.com](www.dmheisel.com)
 
 ## To-Dos:
 
-[ ] Add further projects to portfolio
+[X] Add further projects to portfolio
 [ ] Skills section
-[ ] Add a bio
+[X] Add a bio
