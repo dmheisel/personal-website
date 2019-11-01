@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0f3f22f1f92628f34b665426494eb66b",
+    "revision": "8490be56ed5511fe1684c948896b8b51",
     "url": "/index.html"
   },
   {
-    "revision": "effc6139891c607ddd7c",
+    "revision": "aa7f6c8b922836d48e51",
     "url": "/static/css/2.8271af8e.chunk.css"
   },
   {
-    "revision": "effc6139891c607ddd7c",
-    "url": "/static/js/2.29196e3d.chunk.js"
+    "revision": "aa7f6c8b922836d48e51",
+    "url": "/static/js/2.71ec1326.chunk.js"
   },
   {
-    "revision": "7c91353bcf2f76ce16e6",
-    "url": "/static/js/main.18be18f1.chunk.js"
+    "revision": "fc5017225044c10d873a",
+    "url": "/static/js/main.2db3cd41.chunk.js"
   },
   {
     "revision": "8ad1cfe2009bbefe7b78",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8e26f22094a11f6a689d8302dc30782c",
     "url": "/static/media/React.8e26f220.svg"
+  },
+  {
+    "revision": "ef00175c5f0b56f758646a6533e8f3a1",
+    "url": "/static/media/SkillSense-JobSearch.ef00175c.png"
   },
   {
     "revision": "d1437e077ebb9a43b15a5bc9e80daebe",
