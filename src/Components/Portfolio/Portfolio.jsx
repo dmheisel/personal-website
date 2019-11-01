@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import BYKRinfoWindow from '../Views/BYKR-Info-Window.png';
 import GalleryScreen from '../Views/Gallery.png';
 import feedbackLoopsScreen from '../Views/Feedback-Loops.png';
+import SkillSenseScreen from '../Views/SkillSense-JobSearch.png'
 
 import SectionHeader from '../SectionHeader/SectionHeader';
 import PortfolioItem from './PortfolioItem';
@@ -26,6 +27,9 @@ const styles = theme => ({
 class Portfolio extends Component {
 	render() {
 		const { classes } = this.props;
+
+		const skillSenseText =
+			'Created for local entrepeneurs, SkillSense is an app designed to connect software development students with established industry professionals in mentor/mentee relationships, and leverage those connections to help students secure their first freelance contracts.';
 		const bykrText = `A mobile-first web app to provide cyclists with the tools for
 							crowd-sourced tracking and rating of parking racks, fixing posts,
 							and other cycling-related resources in their area.`;
@@ -45,6 +49,14 @@ class Portfolio extends Component {
 							spacing={10}
 							direction='column'
 							className={classes.portfolioGrid}>
+							<PortfolioItem
+								title="SkillSense"
+								text={skillSenseText}
+								image={SkillSenseScreen}
+								direction='row-reverse'
+								techList={['JavaScript', 'ReactJs', 'Redux', 'NodeJs', 'PostgreSQL', 'Git']}
+								url="https://github.com/dmheisel/SkillSense" />
+							<Divider />
 							<PortfolioItem
 								title='BYKR'
 								text={bykrText}
@@ -75,6 +87,7 @@ class Portfolio extends Component {
 								]}
 								url='https://github.com/dmheisel/LifeGallery'
 							/>
+							<Divider />
 							<PortfolioItem
 								title='Feedback Loops'
 								text={feedbackLoopsText}

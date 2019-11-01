@@ -44,10 +44,13 @@ class Navbar extends Component {
 						<Tabs
 							orientation='vertical'
 							value={this.state.value}
-							textColor="primary"
+							textColor='primary'
 							indicatorColor='primary'>
 							{/* <NavbarTab to='Top' value={0} handleClick={this.handleClick} /> */}
-							<NavbarTab to="About" value={0} handleClick={this.handleClick} />
+							<NavbarTab
+								to='About'
+								value={0}
+								handleClick={this.handleClick} />
 							<NavbarTab
 								to='Portfolio'
 								value={1}
@@ -75,7 +78,11 @@ class Navbar extends Component {
 						</Tabs>
 					) : (
 						<Tabs variant='fullWidth' value={this.state.value}>
-							<NavbarTab to='About' value={0} handleClick={this.handleClick} />
+							<NavbarTab
+									to='About'
+									value={0}
+									handleClick={this.handleClick}
+							/>
 							<NavbarTab
 								to='Portfolio'
 								value={1}
